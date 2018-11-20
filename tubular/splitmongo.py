@@ -408,15 +408,19 @@ class SplitMongoBackend(object):
         for branch in branches:
             structure_id = branch.structure_id
             while structure_id and (structure_id not in structures):
-                structures[structure_id] = self._get_structure(structure_id)
-                missing_count += 1
-                LOG.warning(
+                LOG.info(" branch, %s", str(branch))
+                try:
+                    structures[structure_id] = self._get_structure(structure_id)
+                    missing_count += 1
+                    LOG.warning(
                     "Structure %s linked from Active Structure %s (%s) fetched.",
                     structure_id,
                     branch.structure_id,
                     branch.key,
                 )
-                structure_id = structures[structure_id].previous_id
+                    structure_id = structures[structure_id].previous_id
+                except:
+                    break
 
         LOG.info("Finished checking for missing Structures, found %s", missing_count)
 
