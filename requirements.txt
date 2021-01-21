@@ -1,4 +1,5 @@
-atlassian-python-api==0.13.2; python_version >= '3.2'
+# Atlassian dependency commented since this is not used for most pipelines
+# atlassian-python-api==0.13.2; python_version >= '3.2'
 backoff==1.5.0
 boto==2.43.0
 click>=6.2,<7.0
