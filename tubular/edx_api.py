@@ -13,7 +13,7 @@ from edx_rest_api_client.client import EdxRestApiClient
 
 LOG = logging.getLogger(__name__)
 
-OAUTH_ACCESS_TOKEN_URL = "/oauth2/access_token"
+OAUTH_ACCESS_TOKEN_URL = "oauth2/access_token"
 
 
 class EdxGatewayTimeoutError(Exception):
