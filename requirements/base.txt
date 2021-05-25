@@ -91,8 +91,6 @@ oauthlib==3.1.0
     # via
     #   atlassian-python-api
     #   requests-oauthlib
-# pbr==5.5.1
-    # via stevedore
 pyasn1-modules==0.2.8
     # via google-auth
 pyasn1==0.4.8
