@@ -171,8 +171,6 @@ slumber==0.7.1
     # via edx-rest-api-client
 smmap==4.0.0
     # via gitdb
-stevedore==1.32.0
-    # via edx-opaque-keys
 unicodecsv==0.14.1
     # via -r requirements/base.in
 uritemplate==3.0.1
